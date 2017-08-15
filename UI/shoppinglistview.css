@@ -1,0 +1,45 @@
+header .nav_links li {
+    list-style: none;
+}
+
+html, body{
+    padding: 0.05%;
+    font-family: arial, verdana, sans-serif;
+    color: #050b57;
+    height: 100%;
+}
+
+header{
+    clear: both;
+    padding-bottom: 5%;
+    align-content: center;
+}
+
+p#heading {
+    float: left;
+    width: 30%;
+    padding-left: 3%;
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+}
+
+p#heading:hover {
+    text-decoration: underline;
+}
+
+ul.nav_links  {
+    padding-right: 4%;
+}
+
+ul.nav_links a {
+    text-decoration: none;
+    float: right;
+    color: inherit;
+    margin: 0.75%;
+    width: 10%;
+}
+
+ul.nav_links a:hover {
+    text-decoration: underline;
+}
