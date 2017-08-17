@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html>
+{% extends "bootstrap/base.html" %}
 
-<head>
-    <title>Shopping Lists</title>
-    <link rel="stylesheet" type="text/css" href="shoppinglistview.css" />
-</head>
+{% block title %}
+    Shopping Lists
+{% endblock %}
 
-<body>
-    <header>
-        <p id="heading"><a>Shopping Lists</a></p>
-        <ul class="nav_links">
-            <li><a>contact us</a></li>
-            <li><a>FAQs</a></li>
-            <li><a>about us</a></li>
-            <li><a>home</a></li>
-        </ul>
-    </header>
-    <div class="sh_lists">
-    <p><a href=#>Create New List</a>
-    </p>
+{% block content %}
+    <div class="page-header">
+        <h1>Shopping Lists</h1>
     </div>
-</body>
 
-</html>
+    <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About Us</a></li>
+            <li role="presentation"><a href="#">FAQs</a></li>
+    </ul>
+{% endblock %}

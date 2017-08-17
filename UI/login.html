@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html>
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
-<head>
-    <title>Log In</title>
-    <link rel="stylesheet" type="text/css" href="login.css" />
-</head>
+{% block title %}
+    Log In
+{% endblock %}
 
-<body>
-    <header>
-        <img src="" alt="logo">
-        <p>Shopping List</p>
-    </header>
-    <div class="login_form">
+{% block navbar %}
+    <img src="" alt="logo">
+    <p>Shopping List</p>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
         <form  action="{{ url_for('index') }}" method="POST">
-            <p>{{form.username.label}}
-            {{form.username}}</p>
-            <p>{{form.password.label}}
-            {{form.password}}</p>
-            <input type="submit" value="Log In" />
+            {{form.csrf_token}}
+            {{ wtf.form_field(form.username) }}
+
+            {{ wtf.form_field(form.password) }}
+            <input class="btn btn-primary" type="submit" value="Log In">
         </form>
     </div>
-</body>
-
-</html>
+{% endblock %}
