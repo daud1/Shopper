@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/daud1/Shopper.png)](https://travis-ci.org/daud1/Shopper)
 # Shopper
 An application to help users efficiently manage their shopping lists.
 built using the flask web framework and TDD
