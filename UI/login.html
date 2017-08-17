@@ -12,11 +12,11 @@
         <p>Shopping List</p>
     </header>
     <div class="login_form">
-        <form action="">
-            <label for="u_name">Username</label>
-            <input id="u_name" type="text" /><br />
-            <label for="pswd">password</label>
-            <input id="pwsd" type="password" /><br />
+        <form  action="{{ url_for('index') }}" method="POST">
+            <p>{{form.username.label}}
+            {{form.username}}</p>
+            <p>{{form.password.label}}
+            {{form.password}}</p>
             <input type="submit" value="Log In" />
         </form>
     </div>
